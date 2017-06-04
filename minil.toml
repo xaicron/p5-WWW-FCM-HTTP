@@ -1,5 +1,5 @@
 name = "WWW-FCM-HTTP"
-# badges = ["travis"]
+badges = ["travis"]
 authority="cpan:XAICRON"
 
 module_maker="ModuleBuildTiny"

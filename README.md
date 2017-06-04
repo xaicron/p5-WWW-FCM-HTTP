@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/xaicron/p5-WWW-FCM-HTTP.svg?branch=master)](https://travis-ci.org/xaicron/p5-WWW-FCM-HTTP)
 # NAME
 
 WWW::FCM::HTTP - HTTP Client for Firebase Cloud Messaging

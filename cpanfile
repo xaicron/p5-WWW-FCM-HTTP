@@ -10,5 +10,7 @@ on configure => sub {
 };
 
 on test => sub {
+    requires 'Test::Fake::HTTPD';
     requires 'Test::More', '0.98';
+    requires 'Test::SharedFork';
 };

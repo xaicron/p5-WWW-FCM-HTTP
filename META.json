@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "HTTP Client for Firebase Cloud Messaging",
    "author" : [
       "xaicron <xaicron@gmail.com>"
    ],

@@ -2,6 +2,7 @@ package WWW::FCM::HTTP::Response::ResultSet;
 
 use strict;
 use warnings;
+use WWW::FCM::HTTP::Response::Result;
 
 sub new {
     my ($class, $results, $sent_reg_ids) = @_;

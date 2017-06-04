@@ -61,6 +61,12 @@ sub error {
     shift->content->{error};
 }
 
+sub has_error {
+    my $self = shift;
+    return 1 unless $self->is_success;
+    $self->error ? 1 : 0;
+}
+
 sub results {
     my $self = shift;
     my $results = $self->content->{results} || return;

@@ -1,4 +1,4 @@
-package WWW::Google::Cloud::Messaging::Response::Result;
+package WWW::FCM::HTTP::Response::Result;
 
 use strict;
 use warnings;

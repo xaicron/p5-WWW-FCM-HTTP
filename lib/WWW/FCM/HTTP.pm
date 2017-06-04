@@ -13,8 +13,9 @@ use Class::Accessor::Lite (
     new => 0,
     rw  => [qw/ua api_url api_key json/],
 );
-
 use Carp qw(croak);
+
+use WWW::FCM::HTTP::Response;
 
 our $API_URL = 'https://fcm.googleapis.com/fcm/send';
 
@@ -37,6 +38,7 @@ sub send {
     croak 'Usage: $fcm->send(\%payload)' unless ref $payload eq 'HASH';
 
     my $res = $self->ua->request($self->build_request($payload));
+    WWW::FCM::HTTP::Response->new($res, $payload->{registration_ids});
 }
 
 sub build_request {

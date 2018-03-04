@@ -4,7 +4,7 @@
       "xaicron <xaicron@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.0.11, CPAN::Meta::Converter version 2.150010",
+   "generated_by" : "Minilla/v3.0.16, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
@@ -52,7 +52,9 @@
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::Fake::HTTPD" : "0",
+            "Test::More" : "0.98",
+            "Test::SharedFork" : "0"
          }
       }
    },
@@ -70,5 +72,5 @@
    },
    "version" : "0.01",
    "x_authority" : "cpan:XAICRON",
-   "x_serialization_backend" : "JSON::PP version 2.94"
+   "x_serialization_backend" : "JSON::PP version 2.97001"
 }

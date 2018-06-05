@@ -1,6 +1,7 @@
 Revision history for Perl extension WWW-FCM-HTTP
 
 {{$NEXT}}
+    - #2 fixed inconsistent synopsis (reported by @mig1024++)
 
 0.01 2018-03-04T09:30:59Z
 

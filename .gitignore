@@ -29,3 +29,6 @@ cover_db/
 MYMETA.*
 
 /WWW-FCM-HTTP-*
+/.build
+!Build/
+!META.json

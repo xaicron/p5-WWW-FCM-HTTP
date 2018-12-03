@@ -9,6 +9,11 @@ subtest 'api_key required' => sub {
     like $@, qr/Usage: WWW::FCM::HTTP->new\(\{ api_key => \$api_key \}\)/;
 };
 
+subtest 'api_key must be defined' => sub {
+    eval { WWW::FCM::HTTP->new(api_key => undef) };
+    like $@, qr/Usage: WWW::FCM::HTTP->new\(\{ api_key => \$api_key \}\)/;
+};
+
 subtest 'success' => sub {
     my $fcm = WWW::FCM::HTTP->new(api_key => 'api_key');
     isa_ok $fcm, 'WWW::FCM::HTTP';

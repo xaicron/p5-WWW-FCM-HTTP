@@ -22,7 +22,8 @@ our $API_URL = 'https://fcm.googleapis.com/fcm/send';
 sub new {
     my $class = shift;
     my %args  = $_[0] && ref $_[0] eq 'HASH' ? %{ $_[0] } : @_;
-    croak 'Usage: WWW::FCM::HTTP->new({ api_key => $api_key })' unless exists $args{api_key};
+    croak 'Usage: WWW::FCM::HTTP->new({ api_key => $api_key })'
+        unless (exists $args{api_key} && defined $args{api_key});
 
     $args{api_url} ||= $API_URL;
     $args{ua}      ||= LWP::UserAgent->new(
@@ -165,4 +166,3 @@ it under the same terms as Perl itself.
 xaicron E<lt>xaicron@gmail.comE<gt>
 
 =cut
-
